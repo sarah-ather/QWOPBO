@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b941b496bef49ab4dad3b8ae4745e886
 timeCreated: 1520975096
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
+=======
+guid: 42a25d0f02859734b8d7d04b2299d160
+timeCreated: 1520992318
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
   fileIDToRecycleName:
     100000: Beta_Joints
     100002: Beta_Surface
@@ -145,32 +153,56 @@ ModelImporter:
     400134: mixamorig:Spine1
     400136: mixamorig:Spine2
     400138: //RootNode
+<<<<<<< HEAD
+=======
+    2100000: Beta_Joints_MAT
+    2100002: asdf1_Beta_HighLimbsGeoSG2
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
     4300000: Beta_Joints
     4300002: Beta_Surface
     7400000: mixamo.com
     9500000: //RootNode
     13700000: Beta_Joints
     13700002: Beta_Surface
+<<<<<<< HEAD
+=======
+  externalObjects: {}
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+<<<<<<< HEAD
+=======
+    materialLocation: 1
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+<<<<<<< HEAD
+=======
+    rigImportErrors: 
+    rigImportWarnings: 
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+<<<<<<< HEAD
     animationCompression: 3
+=======
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+<<<<<<< HEAD
     clipAnimations:
     - serializedVersion: 16
       name: mixamo.com
@@ -340,19 +372,35 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+=======
+    extraUserProperties: []
+    clipAnimations: []
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+<<<<<<< HEAD
     importBlendShapes: 1
+=======
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+<<<<<<< HEAD
+=======
+    preserveHierarchy: 0
+    indexFormat: 0
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -362,10 +410,15 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+<<<<<<< HEAD
+=======
+    normalCalculationMode: 4
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
+<<<<<<< HEAD
     human:
     - boneName: mixamorig:Hips
       humanName: Hips
@@ -1141,6 +1194,10 @@ ModelImporter:
       position: {x: 0.000000020942645, y: -0.000006763694, z: 0.0927812}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+=======
+    human: []
+    skeleton: []
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -1151,10 +1208,17 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+<<<<<<< HEAD
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3
+=======
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+>>>>>>> 631ae663769d161cccc5bb502b98a2dc31f31fdb
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
