@@ -8,7 +8,7 @@ public class PLayerControllerT : MonoBehaviour {
     private string turnInputAxis = "Horizontal";
 
     public float rotationRate = 360;
-    public float moveSpeed = 2;
+    public float moveSpeed = .2f;
 
     #region MonoBehaviour API
 

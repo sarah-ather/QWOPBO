@@ -8,7 +8,7 @@ public class Move : MonoBehaviour {
 
     public Animator anim;
 
-    public float moveSpeed = 2;
+    public float moveSpeed = 0.2f;
 
     #region MonoBehaviour API
     void Start()
