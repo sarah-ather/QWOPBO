@@ -5,7 +5,6 @@ using UnityEngine;
 public class KeyBehaviour : MonoBehaviour {
     public RemoveWall flag;
     public Object Key_Object;
-    private bool status = false;
 
     private void OnCollisionEnter(Collision collision)
     {

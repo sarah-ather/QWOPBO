@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084144002a01e1f45bdf15db991af5c1, type: 3}
   m_Name: DefaultEnemyStats
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 10
   lookRange: 80
   lookSphereCastRadius: 2
   attackRange: 5

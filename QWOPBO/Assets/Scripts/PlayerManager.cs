@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Complete
 {
     [Serializable]
-    public class TankManager
+    public class PlayerManager
     {
         // This class is to manage various settings on a tank.
         // It works with the GameManager class to control how the tanks behave
@@ -21,9 +21,9 @@ namespace Complete
         [HideInInspector] public int m_Wins;                    // The number of wins this player has so far.
 		[HideInInspector] public List<Transform> m_WayPointList;
 
-        //private TankMovement m_Movement;                        // Reference to tank's movement script, used to disable and enable control.
-        //private TankShooting m_Shooting;                        // Reference to tank's shooting script, used to disable and enable control.
-        private GameObject m_CanvasGameObject;                  // Used to disable the world space UI during the Starting and Ending phases of each round.
+        private PlayerMovement m_Movement;                        // Reference to tank's movement script, used to disable and enable control.
+        private TankShooting m_Shooting;                        // Reference to tank's shooting script, used to disable and enable control.
+        //private GameObject m_CanvasGameObject;                  // Used to disable the world space UI during the Starting and Ending phases of each round.
 		private StateController m_StateController;				// Reference to the StateController for AI tanks
 
 		public void SetupAI(List<Transform> wayPointList)
@@ -31,10 +31,12 @@ namespace Complete
 			m_StateController = m_Instance.GetComponent<StateController> ();
 			m_StateController.SetupAI (true, wayPointList);
 
-			//m_Shooting = m_Instance.GetComponent<TankShooting> ();
-			//m_Shooting.m_PlayerNumber = m_PlayerNumber;
+            //m_Shooting = m_Instance.GetComponent<TankShooting> ();
+            //m_Shooting.m_PlayerNumber = m_PlayerNumber;
+            //m_Movement = m_Instance.GetComponent<PlayerMovement>();
+            //m_Movement.m_PlayerNumber = m_PlayerNumber;
 
-			m_CanvasGameObject = m_Instance.GetComponentInChildren<Canvas> ().gameObject;
+            //m_CanvasGameObject = m_Instance.GetComponentInChildren<Canvas> ().gameObject;
 			m_ColoredPlayerText = "<color=#" + ColorUtility.ToHtmlStringRGB(m_PlayerColor) + ">PLAYER " + m_PlayerNumber + "</color>";
 
 			// Get all of the renderers of the tank.
@@ -49,16 +51,16 @@ namespace Complete
 		}
 
 
-		public void SetupPlayerTank ()
+		public void SetupPlayer ()
         {
             // Get references to the components.
 
-			//m_Movement = m_Instance.GetComponent<TankMovement> ();
+			m_Movement = m_Instance.GetComponent<PlayerMovement> ();
             //m_Shooting = m_Instance.GetComponent<TankShooting> ();
             //m_CanvasGameObject = m_Instance.GetComponentInChildren<Canvas> ().gameObject;
 
             // Set the player numbers to be consistent across the scripts.
-            //m_Movement.m_PlayerNumber = m_PlayerNumber;
+            m_Movement.m_PlayerNumber = 1;
             //m_Shooting.m_PlayerNumber = m_PlayerNumber;
 
             // Create a string using the correct color that says 'PLAYER 1' etc based on the tank's color and the player's number.
@@ -79,30 +81,30 @@ namespace Complete
         // Used during the phases of the game where the player shouldn't be able to control their tank.
         public void DisableControl ()
         {
-			/*if (m_Movement != null)
+			if (m_Movement != null)
             m_Movement.enabled = false;
 
 			if (m_StateController != null)
 				m_StateController.enabled = false;
 
-            m_Shooting.enabled = false;
+            //m_Shooting.enabled = false;
 
-            m_CanvasGameObject.SetActive (false);*/
+            //m_CanvasGameObject.SetActive (false);
         }
 
 
         // Used during the phases of the game where the player should be able to control their tank.
         public void EnableControl ()
         {
-			/*if (m_Movement != null)
+			if (m_Movement != null)
             m_Movement.enabled = true;
 
 			if (m_StateController != null)
 				m_StateController.enabled = true;
 
-            m_Shooting.enabled = true;
+            //m_Shooting.enabled = true;
 
-            m_CanvasGameObject.SetActive (true);*/
+            //m_CanvasGameObject.SetActive (true);
         }
 
 

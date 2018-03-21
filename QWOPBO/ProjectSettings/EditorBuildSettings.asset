@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/newCherechter movment.unity
     guid: 8738186e77ee51245b5bade0831cb67c
   - enabled: 1
