@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharecterController : MonoBehaviour {
+public class CharecterControllerBoxer : MonoBehaviour {
 
     public Animator a;
     public Rigidbody r;
-    public float sprint;
 
     private float H;
     private float V;
     private float speedBoost;
+    private bool punchStatus;
 
     public float rotationRate = 60;
     public float moveSpeed = 10;
@@ -20,20 +20,23 @@ public class CharecterController : MonoBehaviour {
     void Start () {
         a = GetComponent<Animator>();
         r = GetComponent<Rigidbody>();
-        speedBoost = 1.0f;
+        //speedBoost = 1.0f;
+        punchStatus = false;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        H = Input.GetAxis("Horizontal");
-        V = Input.GetAxis("Vertical");
-        Running();
+        Punch();
+        a.SetBool("Punch", punchStatus);
+        //H = Input.GetAxis("Horizontal");
+        //V = Input.GetAxis("Vertical");
+        //Running();
 
-        Turn(H);
+        //Turn(H);
 
 
-        if (Input.GetKeyUp(KeyCode.W) && Input.GetKeyUp(KeyCode.S))
+        /*if (Input.GetKeyUp(KeyCode.W) && Input.GetKeyUp(KeyCode.S))
         {
             r.Sleep();
             r.velocity = Vector3.zero;
@@ -43,7 +46,7 @@ public class CharecterController : MonoBehaviour {
         else
         {
             Move(V);
-        }
+        }*/
 
         /*
 
@@ -54,15 +57,29 @@ public class CharecterController : MonoBehaviour {
         */
     }
 
-    void FixedUpdate()
+    /*void FixedUpdate()
     {
-        a.SetFloat("walk", V);
+        //a.SetFloat("walk", V);
         //a.SetFloat("turn", H);
-        a.SetFloat("run", sprint);
+        //a.SetFloat("run", sprint);
+        a.SetBool("Punch", punchStatus);
 
+    }*/
+
+    void Punch()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            punchStatus = true;
+
+        }
+        else
+        {
+            punchStatus = false;
+        }
     }
 
-    void Running()
+    /*void Running()
     {
         if (Input.GetButton("Fire1"))
         {
@@ -85,5 +102,5 @@ public class CharecterController : MonoBehaviour {
     private void Turn(float input)
     {
         transform.Rotate(0, input * rotationRate * Time.deltaTime, 0);
-    }
+    }*/
 }
