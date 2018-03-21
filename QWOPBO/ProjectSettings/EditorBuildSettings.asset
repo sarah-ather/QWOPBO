@@ -8,3 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/newCherechter movment.unity
     guid: 8738186e77ee51245b5bade0831cb67c
+  - enabled: 1
+    path: Assets/_Scenes/texturedmap Fight Scene.unity
+    guid: 4a677b0e31ccda64698be72010ec78ed
+  - enabled: 1
+    path: Assets/_Scenes/texturedmap.unity
+    guid: a239b8e38210fa744b6c05d4dda8337c
