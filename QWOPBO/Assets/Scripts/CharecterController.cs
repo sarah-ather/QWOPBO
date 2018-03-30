@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharecterController : MonoBehaviour {
 
@@ -86,4 +87,18 @@ public class CharecterController : MonoBehaviour {
     {
         transform.Rotate(0, input * rotationRate * Time.deltaTime, 0);
     }
+
+	private void OnCollisionEnter(Collision collision)
+	{
+
+		if(collision.gameObject.name == "FSM1"){
+			SceneManager.LoadScene("texturedmap Fight Scene");
+		}
+		if(collision.gameObject.name == "LockTrap"){
+			SceneManager.LoadScene("texturedmap Fight Scene");
+		}
+		if(collision.gameObject.name == "Trap"){
+			SceneManager.LoadScene("texturedmap Fight Scene");
+		}
+	}
 }
