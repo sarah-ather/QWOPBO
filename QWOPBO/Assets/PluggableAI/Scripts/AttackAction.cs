@@ -21,7 +21,7 @@ public class AttackAction : Action
         {
             if (controller.CheckIfCountDownElapsed(controller.enemyStats.attackRate))
             {
-                 controller.tankShooting.Fire();
+                 controller.tankShooting.FireAI();
             }
         }
     }

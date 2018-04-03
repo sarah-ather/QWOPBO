@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 namespace Complete
 {
     public class PlayerMovement : MonoBehaviour
@@ -19,6 +18,11 @@ namespace Complete
         private float m_TurnInputValue;             // The current value of the turn input.
         //private float m_OriginalPitch;              // The pitch of the audio source at the start of the scene.
         private ParticleSystem[] m_particleSystems; // References to all the particles systems used by the Tanks
+        public Animator animation;
+        public float m_Damping = 0.15f;
+        private readonly int m_HashHorizontalPara = Animator.StringToHash("Horizontal");
+        private readonly int m_HashVerticalPara = Animator.StringToHash("Vertical");
+
 
         private void Awake ()
         {
@@ -64,7 +68,7 @@ namespace Complete
             // The axes names are based on player number.
             m_MovementAxisName = "Vertical" ;
             m_TurnAxisName = "Horizontal" ;
-
+            //animation = GetComponent<Animator>();
             // Store the original pitch of the audio source.
             //m_OriginalPitch = m_MovementAudio.pitch;
         }
@@ -75,7 +79,13 @@ namespace Complete
             // Store the value of both input axes.
             m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
             m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
+            //animation.CrossFade("horizontal", 0.1f);
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
 
+            Vector2 input = new Vector2(horizontal, vertical).normalized * m_Speed ;
+            animation.SetFloat(m_HashHorizontalPara, input.x, m_Damping, Time.deltaTime);
+            animation.SetFloat(m_HashVerticalPara, input.y, m_Damping, Time.deltaTime);
             //EngineAudio ();
         }
 
@@ -122,7 +132,7 @@ namespace Complete
             Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
 
             // Apply this movement to the rigidbody's position.
-            m_Rigidbody.MovePosition(m_Rigidbody.position + movement);
+           m_Rigidbody.MovePosition(m_Rigidbody.position + movement);
         }
 
 
