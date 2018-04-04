@@ -1,4 +1,0 @@
-Scent AI
-Floor Textures
-Add Timer
-Add boxing rope collision physics
