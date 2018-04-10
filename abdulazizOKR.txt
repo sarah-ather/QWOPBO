@@ -2,4 +2,5 @@ create position movement for boxer --- Wed by 10am (estimate 7 hrs)
 create new chrechter movement for WASP with animations -- Sun by 10pm (estimate 8 hrs)
 create NavMesh AI -- Sun by 10pm (estimate 4 hrs)
 Rework chrechter movement with animations from asset store -- Mon by 10am
-Redo FSM -- Mon by 10am
+add menu -- Tues by 8am
+Work on QWOP style fighting -- Wed by 10am

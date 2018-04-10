@@ -1,1 +1,4 @@
 create arm movement for boxer --- Wed by 2pm (estimate 4 hrs)
+Opponent AI --- Wed by 4 pm (estimate 9 hours)
+General Ragdoll physics --- (estimate 12 hours)
+Adding three fsm outside of ring, work on FSM for enemy --- Tuesday by 8 PM.
