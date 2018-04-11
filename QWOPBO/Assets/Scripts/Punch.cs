@@ -15,7 +15,7 @@ public class Punch : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown("i"))
         {
-            anim.CrossFade("Punch", 0.1f);
+            anim.CrossFade("Punch", 0.0f);
         }
     }
 }

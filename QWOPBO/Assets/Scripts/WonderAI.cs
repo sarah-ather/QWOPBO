@@ -11,8 +11,8 @@ public class WonderAI : MonoBehaviour {
 
 
 	private bool isWoundering;
-	private bool isRotatingRight;
-	private bool isRotatingLeft;
+	//private bool isRotatingRight;
+	//private bool isRotatingLeft;
 	private int counter;
 
 	// Use this for initialization
@@ -20,8 +20,8 @@ public class WonderAI : MonoBehaviour {
 	{
 		counter = 1;
 		isWoundering = false;
-		isRotatingRight = false;
-		isRotatingLeft = false;
+		//isRotatingRight = false;
+		//isRotatingLeft = false;
 	}
 
 	// Update is called once per frame

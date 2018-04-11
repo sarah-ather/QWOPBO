@@ -16,7 +16,7 @@ public class StateController : MonoBehaviour
     [HideInInspector]
     public NavMeshAgent navMeshAgent;
     [HideInInspector]
-    public Complete.TankShooting tankShooting;
+    public EnemyPunching enemyPunching;
     [HideInInspector]
     public List<Transform> wayPointList;
     [HideInInspector]
@@ -31,7 +31,7 @@ public class StateController : MonoBehaviour
 
     void Awake()
     {
-        tankShooting = GetComponent<Complete.TankShooting>();
+        enemyPunching = GetComponent<EnemyPunching>();
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
