@@ -13,6 +13,6 @@ public class FSMChaseAction : FSMAction
     private void Chase(FSMStateController controller)
     {
         controller.navMeshAgent.destination = controller.chaseTarget.position;
-        controller.navMeshAgent.isStopped = false;
+        controller.navMeshAgent.Resume ();
     }
 }

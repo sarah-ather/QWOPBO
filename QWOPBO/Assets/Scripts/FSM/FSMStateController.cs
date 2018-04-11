@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Complete;
 
 public class FSMStateController : MonoBehaviour {
 
@@ -12,7 +13,7 @@ public class FSMStateController : MonoBehaviour {
 
 
     [HideInInspector] public NavMeshAgent navMeshAgent;
-    [HideInInspector] public EnemyPunching enemyPunching;
+    [HideInInspector] public Complete.TankShooting tankShooting;
     [HideInInspector] public List<Transform> wayPointList;
     [HideInInspector] public int nextWayPoint;
     [HideInInspector] public Transform chaseTarget;
@@ -23,7 +24,7 @@ public class FSMStateController : MonoBehaviour {
 
     void Awake () 
     {
-        enemyPunching = GetComponent<EnemyPunching> ();
+        tankShooting = GetComponent<Complete.TankShooting> ();
         navMeshAgent = GetComponent<NavMeshAgent> ();
     }
 

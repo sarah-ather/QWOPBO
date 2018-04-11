@@ -13,7 +13,7 @@ public class FSMScanDecision : FSMDecision
 
     private bool Scan(FSMStateController controller)
     {
-        controller.navMeshAgent.isStopped = true;
+        controller.navMeshAgent.Stop ();
         controller.transform.Rotate (0, controller.enemyStats.searchingTurnSpeed * Time.deltaTime, 0);
         return controller.CheckIfCountDownElapsed (controller.enemyStats.searchDuration);
     }

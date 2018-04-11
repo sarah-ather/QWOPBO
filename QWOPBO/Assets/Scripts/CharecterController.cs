@@ -100,13 +100,5 @@ public class CharecterController : MonoBehaviour {
 		if(collision.gameObject.name == "Trap"){
 			SceneManager.LoadScene("texturedmap Fight Scene");
 		}
-        if (collision.gameObject.name == "Fan(Clone)")
-        {
-            SceneManager.LoadScene("texturedmap Fight Scene");
-        }
-        if (collision.gameObject.name == "Fan 2(Clone)")
-        {
-            SceneManager.LoadScene("texturedmap Fight Scene");
-        }
-    }
+	}
 }

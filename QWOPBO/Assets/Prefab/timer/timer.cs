@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using System.Collections;
+using System.Collections;
 
 public class timer : MonoBehaviour {
     public string levelToLoad;
@@ -21,7 +21,7 @@ public class timer : MonoBehaviour {
         timerSeconds.text = "Time Remaining: " + timerv.ToString("f0");
         if(timerv <= 0)
         {
-            //Application.LoadLevel(levelToLoad);
+            Application.LoadLevel(levelToLoad);
         }
 
 		
