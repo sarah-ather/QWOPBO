@@ -19,10 +19,7 @@ public class AttackAction : Action
         if (Physics.SphereCast(controller.eyes.position, controller.enemyStats.lookSphereCastRadius, controller.eyes.forward, out hit, controller.enemyStats.attackRange)
             && hit.collider.CompareTag("Player"))
         {
-            if (controller.CheckIfCountDownElapsed(controller.enemyStats.attackRate))
-            {
-                 controller.tankShooting.FireAI();
-            }
+            controller.enemyPunching.Punch();
         }
     }
 }

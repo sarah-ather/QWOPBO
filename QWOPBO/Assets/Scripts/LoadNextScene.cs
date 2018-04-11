@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadNextScene : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == "Player")
         SceneManager.LoadScene("texturedmap");
     }
 }

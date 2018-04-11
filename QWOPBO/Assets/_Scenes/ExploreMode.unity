@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185635067}
   - component: {fileID: 185635066}
+  - component: {fileID: 185635068}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -158,6 +159,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 156}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &185635068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 185635065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf8225a43c59d34fbc9bf13a15c67cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &291332400
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +617,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 185635066}
+      - m_Target: {fileID: 185635068}
         m_MethodName: FightMode
         m_Mode: 1
         m_Arguments:
@@ -879,7 +891,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 185635066}
+      - m_Target: {fileID: 185635068}
         m_MethodName: LoadStart
         m_Mode: 1
         m_Arguments:

@@ -905,12 +905,13 @@ GameObject:
   - component: {fileID: 4791850144586408}
   - component: {fileID: 95598959513364658}
   - component: {fileID: 114105749256272226}
-  - component: {fileID: 114217910949926806}
   - component: {fileID: 114633723690834332}
   - component: {fileID: 54445992552526618}
+  - component: {fileID: 114544564948005726}
   - component: {fileID: 136010118810801286}
   - component: {fileID: 195479549094987468}
   - component: {fileID: 114110895324705506}
+  - component: {fileID: 114363014450353686}
   - component: {fileID: 114565197578221866}
   m_Layer: 0
   m_Name: ybot_enemy_ragdoll
@@ -2277,7 +2278,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!54 &54525893600919864
 Rigidbody:
@@ -2411,7 +2412,7 @@ MonoBehaviour:
   eyes: {fileID: 4780367866285448}
   remainState: {fileID: 11400000, guid: 7593fe570b18f8f458f8e04f7461ddf2, type: 2}
   navMeshAgent: {fileID: 0}
-  tankShooting: {fileID: 0}
+  enemyPunching: {fileID: 0}
   wayPointList: []
   nextWayPoint: 0
   chaseTarget: {fileID: 0}
@@ -2428,7 +2429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 54445992552526618}
---- !u!114 &114217910949926806
+  healthStatus: {fileID: 0}
+--- !u!114 &114363014450353686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2436,12 +2438,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1752375711949402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3744b25d36f3cbf4ebd9042cb0432a6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 09b736984fb1ff74abe6b0ad9cb689f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlayerNumber: 1
-  a: {fileID: 0}
-  r: {fileID: 0}
+  m_PlayerNumber: 2
+  m_Speed: 12
+  m_TurnSpeed: 180
+  m_Damping: 0.15
+--- !u!114 &114544564948005726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752375711949402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36264e40a7cc58546b1a7dfa7f423527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerNumber: 2
+  animation: {fileID: 95598959513364658}
+  r: {fileID: 54445992552526618}
+  punchStatusLeft: 0
+  punchStatusRight: 0
 --- !u!114 &114565197578221866
 MonoBehaviour:
   m_ObjectHideFlags: 1
