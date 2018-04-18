@@ -77,13 +77,15 @@ public class Ragdoll_controller : MonoBehaviour
         {
             //m_Players[i].m_Instance =
             //print(leftShock.position);
-            Instantiate(shockWave, other.transform.position, other.transform.rotation);
+            if (shockWave!=null)
+                Instantiate(shockWave, other.transform.position, other.transform.rotation);
         }
         if (other.gameObject.name == "pCube12")
         {
             //m_Players[i].m_Instance =
             //other.transform.position;
-            Instantiate(shockWave, other.transform.position, other.transform.rotation);// as GameObject;
+            if (shockWave != null)
+                Instantiate(shockWave, other.transform.position, other.transform.rotation);// as GameObject;
         }
         /*if (playerHealth == true)
         {

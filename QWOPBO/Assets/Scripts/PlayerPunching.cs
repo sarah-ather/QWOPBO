@@ -4,12 +4,14 @@ using UnityEngine.UI;
 public class PlayerPunching : MonoBehaviour
 {
     public int m_PlayerNumber = 1;              // Used to identify the different players.
+    public GameObject panel;
     private new Animator animation;
     //private Rigidbody r;
 
     private bool punchStatus;
     [HideInInspector] public bool punchStatusLeft;
     [HideInInspector] public bool punchStatusRight;
+    private bool pauseToggle = false;
 
     private void OnEnable()
     {
@@ -47,6 +49,21 @@ public class PlayerPunching : MonoBehaviour
         if (Input.GetKeyDown("i"))
         {
             animation.SetTrigger("Punch Right Trigger");
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (pauseToggle)
+            {
+                //Time.timeScale = 1;
+                panel.SetActive(true);
+            }
+            else
+            {
+                //Time.timeScale = 0;
+                panel.SetActive(false);
+            }
+
+            pauseToggle = !pauseToggle;
         }
 
         animation.SetBool("Punch Left", punchStatusLeft);
