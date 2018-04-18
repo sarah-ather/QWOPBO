@@ -2972,6 +2972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_StartingHealth: 100
+  m_Slider: {fileID: 0}
+  m_Slider_enemy: {fileID: 0}
 --- !u!124 &124287047350794560
 Behaviour:
   m_ObjectHideFlags: 1
