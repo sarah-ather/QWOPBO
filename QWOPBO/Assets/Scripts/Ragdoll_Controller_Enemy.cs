@@ -9,7 +9,9 @@ public class Ragdoll_Controller_Enemy : MonoBehaviour
     //private int hp;
     //public Rigidbody m_Rigidbody;              // Reference used to move the tank.
     //public ScriptableObject FSM;
-
+    public GameObject shockWave;
+    public AudioSource sharpPunch;
+    public AudioSource hardPunch; 
     public Health healthStatus;
     //public GameObject enemyl;
     //public Collider enemyCollider;
@@ -57,10 +59,14 @@ public class Ragdoll_Controller_Enemy : MonoBehaviour
         }
         if (other.gameObject.name == "pCube11" && other.gameObject != this)
         {
+            Instantiate(shockWave, other.transform.position, other.transform.rotation);
+            hardPunch.Play();
             healthStatus.TakeDamage(10);
         }
         if (other.gameObject.name == "pCube12" && other.gameObject != this)
         {
+            Instantiate(shockWave, other.transform.position, other.transform.rotation);
+            sharpPunch.Play();
             healthStatus.TakeDamage(5);
         }
         /*if (other.gameObject.name == "ybot_enemy_ragdoll(Clone)")

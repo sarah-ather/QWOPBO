@@ -2947,8 +2947,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 54917519271529490}
   shockWave: {fileID: 1661996482087156, guid: 047ef5d140d76ab4889f597f2470942b, type: 2}
-  leftShock: {fileID: 4348490201646640}
-  rightShock: {fileID: 4118490404725864}
   healthStatus: {fileID: 114497368622513820}
 --- !u!114 &114451237985786194
 MonoBehaviour:

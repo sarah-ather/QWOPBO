@@ -11,8 +11,6 @@ public class Ragdoll_controller : MonoBehaviour
     //public GameObject enemyl;
     //public Collider enemyCollider;
     public GameObject shockWave;
-    public Transform leftShock;
-    public Transform rightShock;
     public Health healthStatus;
     //public bool playerHealth;
 
@@ -27,7 +25,6 @@ public class Ragdoll_controller : MonoBehaviour
     }
     void Start()
     {
-        print(leftShock.position);
         //m_Rigidbody = GetComponent<Rigidbody>
         //SetKinematic(true);
         //hp = maxHp;
@@ -72,19 +69,21 @@ public class Ragdoll_controller : MonoBehaviour
         }
         if (other.gameObject.name == "Enemy(Clone)" && other.gameObject != this)
         {
+            Instantiate(shockWave, other.transform.position, other.transform.rotation);
             healthStatus.TakeDamage(5);
             //print(other.gameObject + "Collision Detected with Ybot");
         }
         if (other.gameObject.name == "pCube11")
         {
             //m_Players[i].m_Instance =
-            print(leftShock.position);
-            GameObject shock = Instantiate(shockWave, leftShock.position, leftShock.rotation) as GameObject;
+            //print(leftShock.position);
+            Instantiate(shockWave, other.transform.position, other.transform.rotation);
         }
         if (other.gameObject.name == "pCube12")
         {
             //m_Players[i].m_Instance =
-            Instantiate(shockWave, rightShock.position, rightShock.rotation);// as GameObject;
+            //other.transform.position;
+            Instantiate(shockWave, other.transform.position, other.transform.rotation);// as GameObject;
         }
         /*if (playerHealth == true)
         {
