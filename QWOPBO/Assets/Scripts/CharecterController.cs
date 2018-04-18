@@ -23,10 +23,11 @@ public class CharecterController : MonoBehaviour {
         r = GetComponent<Rigidbody>();
         speedBoost = 1.0f;
 
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         H = Input.GetAxis("Horizontal");
         V = Input.GetAxis("Vertical");
         Running();
@@ -39,11 +40,15 @@ public class CharecterController : MonoBehaviour {
             r.Sleep();
             r.velocity = Vector3.zero;
             r.angularVelocity = Vector3.zero;
-            
+           
+
+
         }
         else
         {
             Move(V);
+            GetComponent<AudioSource>().Play();
+
         }
 
         /*
