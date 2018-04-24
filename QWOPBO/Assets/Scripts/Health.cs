@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class Health : MonoBehaviour
     private float m_CurrentHealth;                      // How much health the tank currently has.
     private bool m_Dead;                                // Has the tank been reduced beyond zero health yet?
     private Ragdoll_controller ragdollStatus;
+    private GameObject player;
 
 
     private void Awake()
@@ -26,6 +29,7 @@ public class Health : MonoBehaviour
         ragdollStatus = GetComponent<Ragdoll_controller>();
         m_Slider = GameObject.FindWithTag("PlayerHealth").GetComponent<Slider>();
         m_Slider_enemy = GameObject.FindWithTag("EnemyHealth").GetComponent<Slider>();
+        player = GameObject.FindWithTag("Player");
     }
 
     private void OnEnable()
@@ -89,8 +93,24 @@ public class Health : MonoBehaviour
         {
             GetComponent<StateController>().enabled = false;
             GetComponent<Collider>().enabled = false;
+            //if (this.name == "Player(Clone)")
+            //{
+            player.GetComponent<EmitterController>().enabled = true;
+            //}
+            StartCoroutine(Wait());
+
         }
         //ragdollStatus.playerHealth = m_Dead;
         //gameObject.SetActive(false);
+    }
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(3f);
+        LoadScene();
+    }
+
+    private void LoadScene()
+    {
+        SceneManager.LoadScene("End");
     }
 }
