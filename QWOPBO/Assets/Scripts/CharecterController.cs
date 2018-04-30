@@ -8,6 +8,7 @@ public class CharecterController : MonoBehaviour {
     public Animator a;
     public Rigidbody r;
     public float sprint;
+	public float frontRoll;
 
     private float H;
     private float V;
@@ -31,6 +32,7 @@ public class CharecterController : MonoBehaviour {
         H = Input.GetAxis("Horizontal");
         V = Input.GetAxis("Vertical");
         Running();
+		FRoll ();
 
         Turn(H);
 
@@ -65,6 +67,7 @@ public class CharecterController : MonoBehaviour {
         a.SetFloat("walk", V);
         //a.SetFloat("turn", H);
         a.SetFloat("run", sprint);
+		a.SetFloat ("fRoll", frontRoll);
 
     }
 
@@ -82,6 +85,21 @@ public class CharecterController : MonoBehaviour {
             speedBoost = 1.0f;
         }
     }
+
+	void FRoll()
+	{
+		if (Input.GetKey("space"))
+		{
+			frontRoll = 1.0f;
+
+
+		}
+		if (Input.GetKeyUp("space"))
+		{
+			frontRoll = 0.0f;
+		}
+	}
+		
 
     private void Move(float input)
     {

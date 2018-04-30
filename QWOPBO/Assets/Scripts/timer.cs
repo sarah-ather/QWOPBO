@@ -18,7 +18,7 @@ public class timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timerv -= Time.deltaTime;
-        timerSeconds.text = "Time Remaining: " + timerv.ToString("f0");
+        timerSeconds.text = timerv.ToString("f0");
         if(timerv <= 0)
         {
 			SceneManager.LoadScene("End");
