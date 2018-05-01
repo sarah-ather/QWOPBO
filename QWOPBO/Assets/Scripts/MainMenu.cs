@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("texturedmap Fight Scene");
+        SceneManager.LoadScene("texturedmap Fight Scene resized");
     }
 
     public void HowToPlay()

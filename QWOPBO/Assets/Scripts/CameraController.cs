@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
 
     public Transform target;
-    public float CameraSpeed = 0.125f;
+    public float CameraSpeed = 0.01f;
 
     public Vector3 offset;
 
@@ -24,8 +24,9 @@ public class CameraController : MonoBehaviour {
         Vector3 smoothedPostion = Vector3.Lerp(transform.position, postion, CameraSpeed);
 
         
-        transform.position = postion;
-        transform.LookAt(target);
+        transform.position = smoothedPostion;
+        transform.rotation = target.rotation;
+        //transform.LookAt(target);
 
 
     }

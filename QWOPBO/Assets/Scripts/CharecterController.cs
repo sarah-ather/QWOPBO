@@ -115,21 +115,21 @@ public class CharecterController : MonoBehaviour {
 	{
 
 		if(collision.gameObject.name == "FSM1"){
-			SceneManager.LoadScene("texturedmap Fight Scene");
+			SceneManager.LoadScene("texturedmap Fight Scene resized");
 		}
 		if(collision.gameObject.name == "LockTrap"){
-			SceneManager.LoadScene("texturedmap Fight Scene");
+			SceneManager.LoadScene("texturedmap Fight Scene resized");
 		}
 		if(collision.gameObject.name == "Trap"){
-			SceneManager.LoadScene("texturedmap Fight Scene");
+			SceneManager.LoadScene("texturedmap Fight Scene resized");
 		}
         if (collision.gameObject.name == "Fan(Clone)")
         {
-            SceneManager.LoadScene("texturedmap Fight Scene");
+            SceneManager.LoadScene("texturedmap Fight Scene resized");
         }
         if (collision.gameObject.name == "Fan 2(Clone)")
         {
-            SceneManager.LoadScene("texturedmap Fight Scene");
+            SceneManager.LoadScene("texturedmap Fight Scene resized");
         }
     }
 }

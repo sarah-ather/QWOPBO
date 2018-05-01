@@ -1256,6 +1256,7 @@ MonoBehaviour:
   a: {fileID: 874687250}
   r: {fileID: 0}
   sprint: 0
+  frontRoll: 0
   rotationRate: 60
   moveSpeed: 5
 --- !u!136 &874687254
@@ -1325,6 +1326,18 @@ Prefab:
     - target: {fileID: 4712888371883552, guid: ccb9d22c72c5dd5469731cea52be8759, type: 2}
       propertyPath: m_LocalScale.y
       value: 9.337571
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549449177736120, guid: ccb9d22c72c5dd5469731cea52be8759, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096853237412650, guid: ccb9d22c72c5dd5469731cea52be8759, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.061
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322184302259452, guid: ccb9d22c72c5dd5469731cea52be8759, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.091
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccb9d22c72c5dd5469731cea52be8759, type: 2}

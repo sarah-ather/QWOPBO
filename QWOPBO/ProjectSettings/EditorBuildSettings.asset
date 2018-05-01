@@ -8,24 +8,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/newCherechter movment.unity
     guid: 8738186e77ee51245b5bade0831cb67c
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/Start.unity
     guid: 23af2ee8f656b514fbc95be06bd9f3eb
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/ExploreMode.unity
     guid: 7d1bb63b3b0c25d4f9fc26c9a8a08bd7
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/FightMode.unity
     guid: 84e032600665b4e459591053f81e7156
   - enabled: 0
     path: Assets/_Scenes/texturedmap Fight Scene.unity
     guid: 4a677b0e31ccda64698be72010ec78ed
-  - enabled: 0
-    path: Assets/_Scenes/End.unity
-    guid: f85849b00a10be249a8bb856670166c5
   - enabled: 1
     path: Assets/_Scenes/texturedmap Fight Scene resized.unity
     guid: 893762d5b681b0247b6fc61e558b7cda
   - enabled: 1
     path: Assets/_Scenes/texturedmap.unity
     guid: a239b8e38210fa744b6c05d4dda8337c
+  - enabled: 1
+    path: Assets/_Scenes/End.unity
+    guid: f85849b00a10be249a8bb856670166c5
