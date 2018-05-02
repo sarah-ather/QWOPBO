@@ -9,6 +9,8 @@ public class CharecterController : MonoBehaviour {
     public Rigidbody r;
     public float sprint;
 	public float frontRoll;
+    public GameObject PlayerWithGloves;
+    public GameObject PlayerWithoutGloves;
 
     private float H;
     private float V;
@@ -22,6 +24,8 @@ public class CharecterController : MonoBehaviour {
     void Start () {
         a = GetComponent<Animator>();
         r = GetComponent<Rigidbody>();
+        PlayerWithGloves = GetComponent<GameObject>();
+        PlayerWithoutGloves = GetComponent<GameObject>();
         speedBoost = 1.0f;
 
 
@@ -132,5 +136,14 @@ public class CharecterController : MonoBehaviour {
         {
             SceneManager.LoadScene("texturedmap Fight Scene resized");
         }
+        if (collision.gameObject.name == "gloveCube")
+        {
+            PlayerWithGloves.SetActive(true);
+            PlayerWithGloves.transform.position = PlayerWithoutGloves.transform.position;
+            PlayerWithGloves.transform.rotation = PlayerWithoutGloves.transform.rotation;
+            PlayerWithoutGloves.SetActive(false);
+        }
+
+
     }
 }
