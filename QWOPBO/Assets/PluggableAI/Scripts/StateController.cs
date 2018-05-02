@@ -13,7 +13,7 @@ public class StateController : MonoBehaviour
     public State remainState;
 
 
-    [HideInInspector]
+    //[HideInInspector]
     public NavMeshAgent navMeshAgent;
     [HideInInspector]
     public EnemyPunching enemyPunching;
@@ -31,6 +31,7 @@ public class StateController : MonoBehaviour
 
     void Awake()
     {
+        chaseTarget = GameObject.Find("Player(Clone)").GetComponent<Transform>();
         enemyPunching = GetComponent<EnemyPunching>();
         navMeshAgent = GetComponent<NavMeshAgent>();
     }

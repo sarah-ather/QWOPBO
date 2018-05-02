@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427147, b: 0.56452364, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: dd10e6bbef458d34a84560efe4a0e4f3, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 20b361e3560e25b45980d43e8e9721d1, type: 2}
 --- !u!4 &249838038
 Transform:
   m_ObjectHideFlags: 0
@@ -1974,6 +1974,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114979446587606260, guid: e310d7b9461041f4cb192d2aacd8eedc,
+        type: 2}
+      propertyPath: navMeshAgent
+      value: 
+      objectReference: {fileID: 1466249738}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e310d7b9461041f4cb192d2aacd8eedc, type: 2}
   m_IsPrefabParent: 0
@@ -3717,6 +3722,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1394495393}
   m_Mesh: {fileID: 0}
+--- !u!195 &1466249738 stripped
+NavMeshAgent:
+  m_PrefabParentObject: {fileID: 195125755339217282, guid: e310d7b9461041f4cb192d2aacd8eedc,
+    type: 2}
+  m_PrefabInternal: {fileID: 372074893}
 --- !u!1 &1488621881
 GameObject:
   m_ObjectHideFlags: 0

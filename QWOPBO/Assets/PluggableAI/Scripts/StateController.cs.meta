@@ -3,8 +3,17 @@ guid: a7aaa7bb6b9384548b1e290d925e3732
 timeCreated: 1488831080
 licenseType: Pro
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - currentState: {instanceID: 0}
+  - enemyStats: {instanceID: 0}
+  - eyes: {instanceID: 0}
+  - remainState: {instanceID: 0}
+  - navMeshAgent: {instanceID: 0}
+  - enemyPunching: {instanceID: 0}
+  - chaseTarget: {fileID: 4958152134341426, guid: 6cf858a1fe6faf94aa4dcf6eca325ec6,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

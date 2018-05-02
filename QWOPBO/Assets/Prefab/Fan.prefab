@@ -2178,7 +2178,7 @@ MonoBehaviour:
   enemyStats: {fileID: 11400000, guid: 7d36427061c3c3341b14c5ddc05b51b6, type: 2}
   eyes: {fileID: 4438677395086110}
   remainState: {fileID: 11400000, guid: 7593fe570b18f8f458f8e04f7461ddf2, type: 2}
-  navMeshAgent: {fileID: 0}
+  navMeshAgent: {fileID: 195125755339217282}
   enemyPunching: {fileID: 0}
   wayPointList: []
   nextWayPoint: 0
