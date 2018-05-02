@@ -5,7 +5,13 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour {
 	public Dialogue dialogue;
 
-	public void TriggerDialogue(){
+    private void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log("yo");
+        TriggerDialogue();
+    }
+
+    public void TriggerDialogue(){
 		FindObjectOfType<DialogueManager> ().StartDialogue(dialogue);
 	}
 }

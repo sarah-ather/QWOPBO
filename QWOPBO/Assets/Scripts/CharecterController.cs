@@ -117,7 +117,6 @@ public class CharecterController : MonoBehaviour {
 
 	private void OnCollisionEnter(Collision collision)
 	{
-		Debug.Log ("trap");
 		if(collision.gameObject.name == "FSM1"){
 			SceneManager.LoadScene("texturedmap Fight Scene resized");
 		}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -120,64 +120,64 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 464.1478
       objectReference: {fileID: 0}
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_LocalPosition.y
       value: 328.77084
       objectReference: {fileID: 0}
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_LocalPosition.z
       value: 1030.4354
       objectReference: {fileID: 0}
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4687406068476754, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
+    - target: {fileID: 4638054354746342, guid: 6b3f961950c933440ad483a9d8f4a28a, type: 2}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114967389008925348, guid: 6b3f961950c933440ad483a9d8f4a28a,
+    - target: {fileID: 114560863807358310, guid: 6b3f961950c933440ad483a9d8f4a28a,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114967389008925348, guid: 6b3f961950c933440ad483a9d8f4a28a,
+    - target: {fileID: 114560863807358310, guid: 6b3f961950c933440ad483a9d8f4a28a,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114102738347562906, guid: 6b3f961950c933440ad483a9d8f4a28a,
+    - target: {fileID: 114784380545148902, guid: 6b3f961950c933440ad483a9d8f4a28a,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114102738347562906, guid: 6b3f961950c933440ad483a9d8f4a28a,
+    - target: {fileID: 114784380545148902, guid: 6b3f961950c933440ad483a9d8f4a28a,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114719794249692838, guid: 6b3f961950c933440ad483a9d8f4a28a,
+    - target: {fileID: 114018366274581512, guid: 6b3f961950c933440ad483a9d8f4a28a,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114719794249692838, guid: 6b3f961950c933440ad483a9d8f4a28a,
+    - target: {fileID: 114018366274581512, guid: 6b3f961950c933440ad483a9d8f4a28a,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -375,6 +375,8 @@ MonoBehaviour:
   r: {fileID: 0}
   sprint: 0
   frontRoll: 0
+  PlayerWithGloves: {fileID: 0}
+  PlayerWithoutGloves: {fileID: 0}
   rotationRate: 60
   moveSpeed: 10
 --- !u!54 &237168831

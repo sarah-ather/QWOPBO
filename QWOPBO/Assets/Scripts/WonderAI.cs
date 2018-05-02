@@ -69,7 +69,6 @@ public class WonderAI : MonoBehaviour {
 
 
 		agent.SetDestination(location);
-		Debug.Log(location);
 	}
 
 	IEnumerator Wander()
