@@ -3123,6 +3123,34 @@ GameObject:
   m_PrefabParentObject: {fileID: 1741505033510294, guid: 19b254b7005c8964bb37222b58dc73de,
     type: 2}
   m_PrefabInternal: {fileID: 2102694017}
+--- !u!114 &1353739676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353739673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55dcd4c9a98e184480b7f760c6cb761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Steve
+    sentences:
+    - Looks Like the gate is locked
+    - Maybe if I have my gloves it will open.
+--- !u!65 &1353739677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353739673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1394082532
 Prefab:
   m_ObjectHideFlags: 0

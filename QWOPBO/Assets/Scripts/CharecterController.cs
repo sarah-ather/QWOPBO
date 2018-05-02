@@ -24,8 +24,6 @@ public class CharecterController : MonoBehaviour {
     void Start () {
         a = GetComponent<Animator>();
         r = GetComponent<Rigidbody>();
-        PlayerWithGloves = GetComponent<GameObject>();
-        PlayerWithoutGloves = GetComponent<GameObject>();
         speedBoost = 1.0f;
 
 

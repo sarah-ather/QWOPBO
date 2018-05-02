@@ -7,7 +7,6 @@ public class DialogueTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("yo");
         TriggerDialogue();
     }
 
